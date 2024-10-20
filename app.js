@@ -273,5 +273,59 @@ console.log('  buzz:', buzz);
 console.log('  fizzbuzz:', fizzbuzz);
 
 
+// const oneDArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// const oneDArray = [
+//    1, // 0 index
+//    2, // 1 index
+//    3, // 2 index
+//    // and so on
+//  ]
+//  const twoDArray = [
+//    [1, 2, 3], 
+//    [4, 5, 6],
+//    [7, 8, 9]
+//  ];
+ 
+//  const twoDArray = [
+//    [1, 2, 3], // index 0
+//    [4, 5, 6], // index 1
+//    [7, 8, 9]  // index 2
+//  ];
+ 
+//  const twoDArray = [
+//    [1, 2, 3], // index 0
+//  // 0  1  2
+//    [4, 5, 6], // index 1
+//  // 0  1  2
+//    [7, 8, 9]  // index 2
+//  // 0  1  2
+//  ];
+ 
+ /*
+Exercise 13: Retrieve the Last Array
+
+1) Assign the last nested array in the `numArrays` below to a variable named
+   `numList`. As you do this, also fulfill these goals:
+
+   - Assume you don't know how many nested arrays `numArrays` contains.
+   - Do not alter the original `numArrays` array.
+
+Complete Exercise 13 in the space below:
+*/
+
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
+
+numList = numArrays[numArrays.length -1]
+
+
+
+console.log('Exercise 13 result:', numList);
+
 
 
