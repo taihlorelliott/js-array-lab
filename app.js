@@ -174,12 +174,59 @@ Complete Exercise 10 in the space below:
 */
 
 hasSoup = foods.includes("soup")
-
+//hasSoup connects this to the console.log
+//foods.includes calls upon the foods array and also uses the includes method
+//('whatever is in the "" is what the includes command is looking for and it will produce a bolean aka true/false')
 
 console.log('Exercise 10 result:', hasSoup);
 
+// for loop
+// for (let i = 0; i < arr.length; i++) {
+//    console.log(arr[i]);
+//  }
+ 
+// for ... of loop
+//  for (const element of arr) {
+//    console.log(element);
+//  }
+ 
+// forEach() method
+//  arr.forEach((element) => {
+//    console.log(element);
+//  });
+ 
+/*
+Exercise 11: Odd numbers from an array
+
+1) Choose a method to iterate through the `nums` array.
+
+2) Push each odd number to a new array named `odds`.
+
+Hint: Initialize the `odds` variable to an empty array before the iteration.
+
+Complete Exercise 11 in the space below:
+*/
+
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+//this is my starting array
+
+const odds = []
+//this is my new empty array that i will put the odds into and it connects to the console.log directly
+
+for (let i = 0; i < nums.length; i++){
+//a for loop for declares it 
+// let i = 0 starts it at the begining of the array, position 1 aka 0
+//i < nums.length is a condition, if it is true the condition will keep going, if not it will stop this basically means the entire length of the array
+// i++ means to keep looping plus one plus one
+   if(nums[i] % 2 !== 0){
+      //if the nums array [i] or intiger is not divisible by 2 to = 0 then it will grab that [i]
+      odds.push(nums[i])
+      // this taks what was found and puts it in the odds array
+   }
+}
 
 
+console.log('Exercise 11 result:', odds);
 
 
 
