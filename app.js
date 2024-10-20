@@ -92,8 +92,37 @@ Complete Exercise 6 in the space below:
 */
 
 foods.splice(1, 1, 'sushi', 'cupcake')
+//here i called upon the foods array
+//then i used splice to add and remove at the same time
+//1 is pizza the 2nd item in the array and what i need to remove so i need to start there
+// 1 is also how many items im removing
+//sushi and cupcake are adding in place of pizza or number 1
+
 
 console.log('Exercise 6 result:', foods);
+
+/*
+Exercise 7: Using the `slice()` method
+
+1) Use the `slice()` method to create a new array that contains 'sushi' and 
+   'cupcake'.
+
+2) Assign it to a variable named `yummy`.
+
+Complete Exercise 7 in the space below:
+*/
+
+const yummy = foods.slice(1, 3)
+
+//const yummy is creating the new array
+//foods.slice is removing items from the foods array and making theminto the yummy array
+//1 is starting at the the second spot in the array and 3 is stopping at the forth number in the array and not including it
+
+console.log('Exercise 7 result:', yummy);
+
+
+ 
+
 
 
 
