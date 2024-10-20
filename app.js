@@ -92,8 +92,8 @@ Complete Exercise 6 in the space below:
 */
 
 foods.splice(1, 1, 'sushi', 'cupcake')
-//here i called upon the foods array
-//then i used splice to add and remove at the same time
+//here foods called upon the foods array
+//then splice to add and remove at the same time
 //1 is pizza the 2nd item in the array and what i need to remove so i need to start there
 // 1 is also how many items im removing
 //sushi and cupcake are adding in place of pizza or number 1
@@ -322,10 +322,34 @@ const numArrays = [
 ];
 
 numList = numArrays[numArrays.length -1]
+// numList connects this to the console.log
+//numArrays connects this to the array
+//numArrays.length calls upon the length of the array
+//-1 retrives the last item in the array  could also do [1] to call the first item etc
 
 
 
 console.log('Exercise 13 result:', numList);
+
+/*
+Exercise 14: Accessing within nested arrays
+
+1) Retrieve the number `66` from the `numArrays` array. As part of this process
+   do not alter the original `numArrays` array.
+
+2) Assign it to a variable called `num`.
+
+Complete Exercise 14 in the space below:
+*/
+
+num = numArrays[2][1]
+// num connects the console log to the command
+//numArrays connects the command to the orginal array
+//[2] calls upon the 3rd nested array
+//[1] calls upon the 2nd item in the nested array
+
+console.log('Exercise 14 result:', num);
+
 
 
 
