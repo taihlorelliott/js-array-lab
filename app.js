@@ -21,6 +21,7 @@ Complete Exercise 2 in the space below:
 */
 
 foods.push('pizza', 'cheeseburger')
+// push means to add something to the end of an array, in this case the array was empty and we were "pushing into it"
 
 console.log('Exercise 2 result:', foods);
 
@@ -33,6 +34,10 @@ Complete Exercise 3 in the space below:
 */
 
 foods.unshift('taco')
+//foods is what we use to call upon the array foods that was delacred in exercise 1.  
+//unshift is used to add taco to the begining of the array, as push only adds things to the end
+//if we had used shift it would have removd the first item from the array
+
 
 
 console.log('Exercise 3 result:', foods);
@@ -50,6 +55,28 @@ Complete Exercise 4 in the space below:
 
 favFood = foods[1]
 
+//favFood is what connects this line of code to the console log below
+// foods[1]  retrieves the word pizza from the string
+
 console.log('Exercise 4 result:', favFood);
+
+// splice(start)
+// splice(start, deleteCount)
+// splice(start, deleteCount, item0)
+// splice(start, deleteCount, item0, item1)
+// splice(start, deleteCount, item0, item1, /* …, */ itemN)
+
+/*
+Exercise 5: Insert an element between two others
+
+1) Insert the string 'tofu' between 'pizza' and 'cheeseburger' in the array.
+
+Complete Exercise 5 in the space below:
+*/
+
+foods.splice(2, 0, 'tofu')
+
+console.log('Exercise 5 result:', foods);
+
 
 
